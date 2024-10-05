@@ -1,0 +1,181 @@
+.engineering-container {
+  text-align: center;
+  padding: 20px;
+  background-image: url('/src/components/images/engineering_bg.jpg');
+
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  animation: backgroundAnimation 10s ease-in-out infinite alternate;
+}
+
+
+.level-button {
+  width: 250px; /* Adjusted width to make buttons larger */
+  height: 100px; /* Adjusted height to fit the text better */
+  border-radius: 10px;
+  border: none;
+  font-size: 1em; /* Adjust font size */
+  color: #ffffff;
+  background-color: #ffa500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+  padding: 10px; /* Added padding for better text display */
+}
+
+/* Hover effect */
+.level-button:hover {
+  transform: scale(1.1); /* Expands button by 10% */
+  background-color: #5c9eff; /* Change background color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Add deeper shadow when hovered */
+}
+.level-button::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0.6;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+}
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 20px; /* Space between buttons */
+  width: 80%;
+  margin: 0 auto;
+  justify-items: center; /* Center the buttons horizontally */
+}
+
+
+
+
+.level-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+.level-button {
+  background-color: #ffcc00; /* Brighter colors */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Playful font */
+  color: #333;
+}
+
+.level-button:hover {
+  background-color: #ff9900;
+}
+/* Existing styles */
+
+.level-stars {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.star {
+  font-size: 1.5em;
+  color: #ccc; /* Default color for unearned stars */
+}
+
+.star.earned {
+  color: gold; /* Color for earned stars */
+}
+
+.star.unearned {
+  color: #ccc; /* Color for unearned stars */
+}
+
+.explore-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 40px; /* Adjusted padding for more spacing */
+  margin-bottom: 30px;
+  margin-left: 500px; /* Adds space between this section and the title */
+  width: 100%; /* Ensures the container spans the width of the page */
+}
+
+.explore-button {
+  width: 200px; /* Increase button width */
+  height: 150px; /* Increase button height */
+  border: 5px solid #ffa500; /* Box border */
+  background-color: #faf7f7; /* Optional: Background color inside the button */
+  padding: 10px; /* Increase padding */
+  margin-right: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add bounce animation on hover */
+.explore-button:hover {
+  animation: bounce 0.6s infinite;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-7px);
+  }
+}
+
+/* Image scaling */
+.explore-button-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.explore-button:hover .explore-button-img {
+  transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+/* Style the text next to the button */
+.explore-text {
+  font-size: 1.8em; /* Larger text */
+  color: #ffffff;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Playful font */
+  max-width: 600px;
+  text-align: left;
+  background-color: #00bfff; /* Bright blue background */
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 20px; /* Space between button and text */
+  animation: textPulse 1.5s infinite;
+}
+
+@keyframes textPulse {
+  0% {
+    background-color: #00bfff;
+  }
+  50% {
+    background-color: #ff69b4; /* Switch to pink */
+  }
+  100% {
+    background-color: #00bfff;
+  }
+}

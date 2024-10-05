@@ -1,0 +1,37 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/c1/a9/3a/c1a93a1d0de0059a3119b8b1a55ce582.gif);
+    background-size: cover;
+    background-repeat: no-repeat ;
+}
+
+.card{
+    margin-top: 25%;
+    background-image: url(https://asset.gecdesigns.com/img/wallpapers/aurora-borealis-northern-lights-ai-generated-wallpaper-with-snowy-mountains-background-sr17072403-cover.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+    color:whitesmoke;
+    transition: 0.75s ease;
+}
+ a:hover{
+    color: white;
+    background-color: hotpink;
+    
+ }
+
+ label{
+    color:white;
+ }
+
+ button.btn btn-primary w-100{
+    color: black;
+    background-color: gray;
+ }
+
+ .card-title{
+    color: yellow;
+    font-size:xx-large;
+ }

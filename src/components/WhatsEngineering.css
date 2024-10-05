@@ -1,0 +1,132 @@
+.whats-engineering-container {
+  text-align: center;
+  padding: 20px;
+  color: #eb0f4d;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+/* Styling for the content box */
+.content-box {
+  background-color: rgba(255, 255, 255, 0.45); /* Slightly transparent background */
+  border: 3px solid #ffa500; /* Orange border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  animation: bounceIn 1s ease; /* Animation for entrance */
+  max-width: 900px; /* Limit the width */
+  margin: 20px auto; /* Center the box */
+}
+
+/* Keyframes for bounce animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.interactive-content {
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.engineer-animation {
+  width: 300px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.animated-gif {
+  max-width: 100%;
+  height: auto;
+}
+
+.interactive-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #ff7f00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.interactive-button:hover {
+  background-color: #ff4500;
+}
+
+.quiz-container {
+  margin-top: 30px;
+  background: rgba(203, 171, 176, 0.6);
+  color:#de3716;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.quiz-option {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.quiz-option.selected {
+  background-color: #ffa500;
+  color: white;
+}
+
+.next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #008000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.next-button:hover {
+  background-color: #004d00;
+  transform: scale(1.05);
+}
+
+.quiz-result {
+  margin-top: 30px;
+  background-color:hotpink;
+  padding: 50px;
+  opacity: 0.7;
+}
+
+.star {
+  font-size: 2rem;
+  color: gold;
+  margin: 5px;
+}
+.body{
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/282/717/115/iron-man-4k-armor-neon-wallpaper-preview.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ques{
+  font-size: 40px;
+  
+  color:#1136dc
+}

@@ -1,0 +1,57 @@
+.experts-container {
+  display:inline;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f8ff;
+  }
+  
+  .expert-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .expert-card {
+    background-color: #ffe4e1;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .expert-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .expert-video {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .expert-info {
+    margin-top: 10px;
+  }
+  
+  h2 {
+    font-family: 'Comic Sans MS', cursive;
+    color: #333;
+  }
+  
+  p {
+    font-family: 'Arial', sans-serif;
+    color: #555;
+  }
+  
+  @keyframes bounceIn {
+    0% { transform: scale(0.5); }
+    100% { transform: scale(1); }
+  }
+  
+  .expert-card {
+    animation: bounceIn 1s ease;
+  }
+  

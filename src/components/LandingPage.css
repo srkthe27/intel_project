@@ -1,0 +1,215 @@
+/* Bubble Banner Section with Transparency and Full Width */
+.bubble-banner-section {
+  background-color: rgba(224, 247, 250, 0.8); /* Add transparency */
+  width: 100vw; /* Make the banner full width */
+  margin-left: calc(-50vw + 50%); /* To extend the banner to both edges */
+  padding: 50px 0; /* Keep top and bottom padding but remove side padding */
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding is counted inside the width */
+  /*margin-top: 200px;  Adjust this value to bring the banner lower */
+}
+
+
+.bubble-banner-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.bubble-banner-section p {
+  font-size: 1.3em;
+  margin-bottom: 40px;
+}
+
+/* Ensure the bubbles are still centered */
+.bubble-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.bubble {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.bubble:hover {
+  transform: scale(1.1);
+}
+
+.bubble-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.start-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background-color: #388e3c;
+}
+
+/* Bubble Section */
+.bubble-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.bubble {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: transform 0.3s;
+}
+
+.bubble:hover {
+  transform: scale(1.1);
+}
+
+.bubble-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Intro Section Styles */
+.intro-section {
+  background: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/ff986328573043.55c76ee2e38ca.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 100px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+.intro-section h2 {
+  color: greenyellow;
+  font-family: cursive;
+}
+
+.intro-section p {
+  color: #333;
+  line-height: 1.8;
+  font-size: 1.2em;
+}
+
+.intro-section .highlight {
+  color: #30ba37;
+  font-weight: bold;
+}
+
+/* Start Button Styles */
+.start-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.start-button:hover {
+  background-color: #388e3c;
+  box-shadow: 0 0 25px #388e3c, 0 0 50px #30ba37;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+/* Chatbot Button Styles */
+.chatbot-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chatbot-button {
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 2s infinite;
+  position: relative;
+}
+
+.chatbot-button:hover {
+  background-color: #ffa500;
+  transform: scale(1.1);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.chatbot-button:active {
+  transform: scale(0.95);
+}
+
+.chatbot-button::after {
+  content: '';
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 25px;
+  height: 25px;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
